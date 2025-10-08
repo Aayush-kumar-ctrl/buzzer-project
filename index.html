@@ -135,8 +135,8 @@
       // Animate balls
       ball1.classList.add('move-down');
       ball2.classList.add('move-up');
-      ball3.classList.add('move-right');
-      ball4.classList.add('move-left');
+      ball3.classList.add('move-down');
+      ball4.classList.add('move-up');
 
       // Remove classes after animation ends
       ball1.addEventListener('animationend', () => {
@@ -148,11 +148,11 @@
       }, { once: true });
 
       ball3.addEventListener('animationend', () => {
-        ball3.classList.remove('move-right');
+        ball3.classList.remove('move-down');
       }, { once: true });
 
       ball4.addEventListener('animationend', () => {
-        ball4.classList.remove('move-left');
+        ball4.classList.remove('move-up');
       }, { once: true });
     });
   </script>
